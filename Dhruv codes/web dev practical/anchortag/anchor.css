@@ -1,0 +1,22 @@
+body{
+    background-color: lightgray;
+   text-align: center;
+
+}
+
+pre{
+    color: black;
+    padding: 20px;
+    font-size: 26px;
+    color: black;
+}
+p{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+img{
+    align-self: center;
+    width: 105px;
+    height: 105px;
+}

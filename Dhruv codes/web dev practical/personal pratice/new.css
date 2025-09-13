@@ -1,0 +1,18 @@
+body{
+    text-align: center;
+    background-color: rgb(224, 224, 224);
+}
+
+h1{
+    color: rgb(50, 50, 50);
+    font-size: 65px;
+}
+p{
+    color: rgb(50, 50, 50);
+    font-size: 25px;
+}
+img{
+    width: 105px;
+    height: 105px;
+    align-self: center;
+}
