@@ -1,0 +1,72 @@
+/* Global */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+body { background: #f4f4f4; color: #222; }
+
+/* ANIMATIONS */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.reveal { opacity: 0; transform: translateY(20px); transition: 0.8s; }
+.reveal.active { opacity: 1; transform: translateY(0); }
+
+/* HEADER */
+header { background: #0e0e0e; color: #fff; padding: 40px 20px; text-align: center; }
+header h1 {
+  font-size: 42px;
+  font-weight: bold;
+  display: inline-block;
+  border-right: 3px solid #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2.5s steps(30), blink 0.7s step-end infinite;
+}
+header p { font-size: 18px; opacity: 0.8; animation: fadeInUp 1.4s ease; }
+
+/* SECTIONS */
+section { width: 90%; max-width: 1100px; margin: 50px auto; }
+h2 { font-size: 28px; margin-bottom: 15px; border-left: 5px solid #000; padding-left: 10px; }
+
+/* ABOUT */
+#about { font-size: 18px; line-height: 1.6; }
+
+/* SKILLS */
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+.skill-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+.skill-box:hover { transform: translateY(-5px); box-shadow: 0 6px 14px rgba(0,0,0,0.15); }
+.skill-box h3 { margin-bottom: 8px; font-size: 20px; color: #000; }
+
+/* PROJECTS */
+.project {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+.project:hover { transform: translateY(-5px); box-shadow: 0 6px 18px rgba(0,0,0,0.15); }
+.project h3 { font-size: 22px; margin-bottom: 8px; color: #000; }
+.project p { font-size: 16px; }
+
+/* CONTACT */
+#contact p { font-size: 18px; margin-bottom: 10px; }
+
+/* FOOTER */
+footer { background: #0e0e0e; color: #fff; text-align: center; padding: 15px; margin-top: 40px; }

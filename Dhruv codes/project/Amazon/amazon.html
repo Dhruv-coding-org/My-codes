@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Amazon Clone — Home</title>
+  <link rel="stylesheet" href="amazon.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-top container">
+      <a class="logo" href="#">amazon<span>.in</span></a>
+
+      <!-- Mobile menu toggle -->
+      <input id="nav-toggle" type="checkbox" />
+      <label class="nav-toggle-label" for="nav-toggle" aria-hidden="true">
+        <span></span>
+      </label>
+
+      <div class="search-wrap">
+        <form class="search" action="#" method="get" role="search">
+          <select name="all" class="search-category" aria-label="All categories">
+            <option>All</option>
+            <option>Mobiles</option>
+            <option>Fashion</option>
+            <option>Electronics</option>
+          </select>
+          <input class="search-input" type="search" name="q" placeholder="Search Amazon.in" />
+          <button class="search-btn" type="submit" aria-label="Search">Search</button>
+        </form>
+      </div>
+
+      <nav class="header-actions">
+        <a class="action" href="#">Hello, Sign in</a>
+        <a class="action" href="#">Orders</a>
+        <a class="action cart" href="#">Cart <span class="cart-count">0</span></a>
+      </nav>
+    </div>
+
+    <!-- Main navigation -->
+    <div class="main-nav container">
+      <nav class="nav">
+        <a href="#" class="nav-link">All</a>
+        <a href="#" class="nav-link">Mobiles</a>
+        <a href="#" class="nav-link">Best Sellers</a>
+        <a href="#" class="nav-link">Fashion</a>
+        <a href="#" class="nav-link">Electronics</a>
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Books</a>
+        <a href="#" class="nav-link">Prime</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero banner -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <h1>Discover great deals on essentials & more</h1>
+        <p>Daily discounts, fast delivery, and the latest products — all in one place.</p>
+        <a class="cta" href="#">Shop Today's Deals</a>
+      </div>
+      <div class="hero-right">
+        <!-- decorative product grid -->
+        <div class="hero-cards">
+          <div class="hero-card"> 
+            <!-- inline SVG placeholder -->
+            <svg viewBox="0 0 100 80" preserveAspectRatio="xMidYMid meet">
+              <rect width="100" height="80" rx="6" fill="#f4f4f4"></rect>
+              <text x="50" y="45" text-anchor="middle" fill="#bbb" font-size="12">Product</text>
+            </svg>
+            <p class="hc-title">Smartphone Deals</p>
+          </div>
+          <div class="hero-card"> 
+            <svg viewBox="0 0 100 80" preserveAspectRatio="xMidYMid meet">
+              <rect width="100" height="80" rx="6" fill="#f4f4f4"></rect>
+              <text x="50" y="45" text-anchor="middle" fill="#bbb" font-size="12">Product</text>
+            </svg>
+            <p class="hc-title">Fashion Picks</p>
+          </div>
+          <div class="hero-card"> 
+            <svg viewBox="0 0 100 80" preserveAspectRatio="xMidYMid meet">
+              <rect width="100" height="80" rx="6" fill="#f4f4f4"></rect>
+              <text x="50" y="45" text-anchor="middle" fill="#bbb" font-size="12">Product</text>
+            </svg>
+            <p class="hc-title">Home & Kitchen</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured categories -->
+  <section class="categories container">
+    <h2 class="section-title">Shop by category</h2>
+    <div class="cat-grid">
+      <div class="cat">
+        <div class="cat-img"></div>
+        <h3>Mobiles</h3>
+        <p>Latest smartphones & accessories</p>
+      </div>
+      <div class="cat">
+        <div class="cat-img"></div>
+        <h3>Clothing</h3>
+        <p>Men & Women fashion</p>
+      </div>
+      <div class="cat">
+        <div class="cat-img"></div>
+        <h3>Electronics</h3>
+        <p>Top-brand gadgets & devices</p>
+      </div>
+      <div class="cat">
+        <div class="cat-img"></div>
+        <h3>Home & Kitchen</h3>
+        <p>Essentials for your home</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products area -->
+  <section class="products container">
+    <h2 class="section-title">Trending products</h2>
+
+    <div class="products-grid">
+      <!-- Product card -->
+      <article class="product-card">
+        <div class="product-media">
+          <svg viewBox="0 0 200 140" preserveAspectRatio="xMidYMid meet">
+            <rect width="200" height="140" rx="8" fill="#f8f8f8"></rect>
+            <text x="100" y="75" text-anchor="middle" fill="#ddd" font-size="18">Image</text>
+          </svg>
+        </div>
+        <div class="product-body">
+          <h3 class="product-title">Wireless Headphones</h3>
+          <p class="product-desc">Comfortable, long-life battery with excellent sound.</p>
+          <div class="product-meta">
+            <span class="price">₹1,799</span>
+            <a class="btn" href="#">Buy now</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-media">
+          <svg viewBox="0 0 200 140" preserveAspectRatio="xMidYMid meet">
+            <rect width="200" height="140" rx="8" fill="#f8f8f8"></rect>
+            <text x="100" y="75" text-anchor="middle" fill="#ddd" font-size="18">Image</text>
+          </svg>
+        </div>
+        <div class="product-body">
+          <h3 class="product-title">Smartwatch</h3>
+          <p class="product-desc">Health tracking and notifications on your wrist.</p>
+          <div class="product-meta">
+            <span class="price">₹2,499</span>
+            <a class="btn" href="#">Buy now</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-media">
+          <svg viewBox="0 0 200 140" preserveAspectRatio="xMidYMid meet">
+            <rect width="200" height="140" rx="8" fill="#f8f8f8"></rect>
+            <text x="100" y="75" text-anchor="middle" fill="#ddd" font-size="18">Image</text>
+          </svg>
+        </div>
+        <div class="product-body">
+          <h3 class="product-title">Portable Speaker</h3>
+          <p class="product-desc">Bluetooth speaker with rich bass.</p>
+          <div class="product-meta">
+            <span class="price">₹999</span>
+            <a class="btn" href="#">Buy now</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-media">
+          <svg viewBox="0 0 200 140" preserveAspectRatio="xMidYMid meet">
+            <rect width="200" height="140" rx="8" fill="#f8f8f8"></rect>
+            <text x="100" y="75" text-anchor="middle" fill="#ddd" font-size="18">Image</text>
+          </svg>
+        </div>
+        <div class="product-body">
+          <h3 class="product-title">Desk Lamp</h3>
+          <p class="product-desc">Energy-efficient LED lamp with adjustable brightness.</p>
+          <div class="product-meta">
+            <span class="price">₹599</span>
+            <a class="btn" href="#">Buy now</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="ft-col">
+        <h4>Get to Know Us</h4>
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+      </div>
+      <div class="ft-col">
+        <h4>Make Money with Us</h4>
+        <a href="#">Sell on Amazon</a>
+        <a href="#">Advertise</a>
+      </div>
+      <div class="ft-col">
+        <h4>Customer Service</h4>
+        <a href="#">Returns</a>
+        <a href="#">Help</a>
+      </div>
+      <div class="ft-col">
+        <h4>Contact</h4>
+        <p>New Delhi</p>
+        <p>support@example.com</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Amazon Clone © <span id="year"></span> — For learning purposes</p>
+    </div>
+  </footer>
+</body>
+</html>
